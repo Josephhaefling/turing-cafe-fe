@@ -8,7 +8,12 @@ function Reservations(props) {
     return <Reservation reservation={ reservation } />  
     })
     return (
-        <section>
+        <section style={{
+                alignContent: 'space-around',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-around'
+                 }}>
            { allUserReservations }
         </section>
     )
