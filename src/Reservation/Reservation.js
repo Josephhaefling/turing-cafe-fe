@@ -1,10 +1,10 @@
 import React from 'react'
 
 function Reservation(props) {
-    console.log(props);
     const { id, name, date, time, number  } = props.reservation
     return (
         <section 
+            key={ id }
             style={{
                 border: '2px solid red',
                 height: '40%',
